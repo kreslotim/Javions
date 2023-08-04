@@ -8,6 +8,7 @@ public record GeoPos(int longitudeT32, int latitudeT32) {
         return ((-(1<<30) <= latitudeT32) && (latitudeT32 <= (1<<30)));
     }
 
+    //Hello!
 
     public double longitude() {
         return Units.convert(longitudeT32, Units.Angle.T32, Units.Angle.RADIAN);
